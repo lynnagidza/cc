@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CardCraft - Greeting Cards Marketplace</title>
+  <!-- Include your CSS and JavaScript dependencies -->
+  <!-- For example: -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="{{ url_for('main.home') }}"><img src="{{ url_for('static', filename='images/logo.png') }}"
+            alt="CardCraft Logo"></a>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="{{ url_for('main.home') }}">Home</a></li>
+          {% if g.user %}
+          <li><a href="{{ url_for('user.profile') }}">Profile</a></li>
+          <li><a href="{{ url_for('user.order_history') }}">Order History</a></li>
+          <li><a href="{{ url_for('user.logout') }}">Logout</a></li>
+          {% else %}
+          <li><a href="{{ url_for('user.login') }}">Login</a></li>
+          <li><a href="{{ url_for('user.register') }}">Register</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page content -->
+  <div class="container">
+    {% block content %}{% endblock %}
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; {{ current_year }} CardCraft. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
