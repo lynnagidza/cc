@@ -1,6 +1,6 @@
 /* Register page styles */
 
-.register-form {
+.container {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
@@ -9,19 +9,19 @@
   border-radius: 4px;
 }
 
-.register-form h2 {
+.container h1 {
   margin-bottom: 20px;
   text-align: center;
 }
 
-.register-form label {
+.container label {
   display: block;
   margin-bottom: 10px;
 }
 
-.register-form input[type="text"],
-.register-form input[type="email"],
-.register-form input[type="password"] {
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -29,7 +29,7 @@
   border-radius: 4px;
 }
 
-.register-form button {
+.container button {
   display: block;
   width: 100%;
   padding: 10px;
@@ -40,11 +40,11 @@
   cursor: pointer;
 }
 
-.register-form button:hover {
+.container button:hover {
   background-color: #555;
 }
 
-.register-form .error-message {
+.container .error-message {
   color: red;
   margin-bottom: 10px;
 }

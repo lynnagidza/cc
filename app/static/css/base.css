@@ -14,15 +14,30 @@ li {
 }
 
 /* Page layout */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  background-color: #333;
+  background-color: #f7f7f7;
   padding: 20px;
-  color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  text-align: right;
 }
 
 nav ul {
@@ -35,22 +50,28 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
 }
 
+.container {
+  min-height: calc(100vh - 20px);
+  /* Adjust the margin value as needed */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .content {
-  max-width: 960px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
+  flex: 1;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #f7f7f7;
+  color: #333;
   padding: 20px;
   text-align: center;
+  flex-shrink: 0;
 }
 
 /* Custom styles specific to CardCraft */
