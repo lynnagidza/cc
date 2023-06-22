@@ -7,5 +7,6 @@ CardCraft is a captivating greeting cards platform that brings back the art of c
 
 Check out the [deployed site](https://www.cardcraft.com) to experience the joy of personalized greeting cards. To learn more about the development journey and the challenges faced, you can read the [final project blog article](https://medium.com/@agidza/from-concept-to-completion-adventures-in-developing-a-greeting-cards-platform-c82906d3ae64) and visit the author's [LinkedIn profile](https://www.linkedin.com/in/lynnagidza/).
 
-![CardCraft Screenshot](./screenshots/cardcraft-screenshot.png)
+![CardCraft Homepage Mockup](./diagrams/mockups/cchomepagemockup.png)
+![CardCraft Screenshot](./diagrams/screenshots/ccregistration1.png)
 
